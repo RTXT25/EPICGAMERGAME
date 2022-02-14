@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637792086832005915
-    m_Hash: 504129799
+      ticks: 637804288044287850
+    m_Hash: 2302518295
   m_LockFileStatus:
     m_FilePath: C:/Users/skool/Documents/GitHub/EPIC/EPICGAMERGAME/Gamer Game/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637792086881326506
-    m_Hash: 2249486382
+      ticks: 637804288045142268
+    m_Hash: 3424783969
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -22,6 +22,149 @@ m_LocalPackages:
 m_ProjectPath: C:/Users/skool/Documents/GitHub/EPIC/EPICGAMERGAME/Gamer Game/Packages
 m_EditorVersion: 2021.1.16f1 (5fa502fca597)
 m_ResolvedPackages:
+- packageId: com.unity.cinemachine@2.7.9
+  testable: 0
+  isDirectDependency: 1
+  version: 2.7.9
+  source: 1
+  resolvedPath: C:\Users\skool\Documents\GitHub\EPIC\EPICGAMERGAME\Gamer Game\Library\PackageCache\com.unity.cinemachine@2.7.9
+  assetPath: Packages/com.unity.cinemachine
+  name: com.unity.cinemachine
+  displayName: Cinemachine
+  author:
+    name: 
+    email: 
+    url: 
+  category: cinematography
+  type: 
+  description: "Smart camera tools for passionate creators. \n\nNew starting from
+    2.7.1: Are you looking for the Cinemachine menu? It has moved to the GameObject
+    menu.\n\nIMPORTANT NOTE: If you are upgrading from the legacy Asset Store version
+    of Cinemachine, delete the Cinemachine asset from your project BEFORE installing
+    this version from the Package Manager."
+  status: 4
+  errors: []
+  versions:
+    all:
+    - 2.1.11-beta.1
+    - 2.1.12
+    - 2.1.13
+    - 2.2.0
+    - 2.2.7
+    - 2.2.8
+    - 2.2.9
+    - 2.2.10-preview.3
+    - 2.2.10-preview.4
+    - 2.3.1
+    - 2.3.3
+    - 2.3.4
+    - 2.3.5-preview.3
+    - 2.4.0-preview.3
+    - 2.4.0-preview.4
+    - 2.4.0-preview.6
+    - 2.4.0-preview.7
+    - 2.4.0-preview.8
+    - 2.4.0-preview.9
+    - 2.4.0-preview.10
+    - 2.4.0
+    - 2.5.0
+    - 2.6.0-preview.2
+    - 2.6.0-preview.3
+    - 2.6.0-preview.5
+    - 2.6.0-preview.8
+    - 2.6.0
+    - 2.6.1-preview.6
+    - 2.6.1
+    - 2.6.2-preview.1
+    - 2.6.2
+    - 2.6.3-preview.2
+    - 2.6.3
+    - 2.6.4
+    - 2.6.5
+    - 2.6.9
+    - 2.6.10
+    - 2.6.11
+    - 2.7.1
+    - 2.7.2
+    - 2.7.3
+    - 2.7.4
+    - 2.7.5
+    - 2.7.8
+    - 2.7.9
+    - 2.8.0-exp.1
+    - 2.8.0-exp.2
+    - 2.8.0-pre.1
+    - 2.8.0
+    - 2.8.1
+    - 2.8.2
+    - 2.8.3
+    - 2.8.4
+    - 2.9.0-pre.1
+    - 2.9.0-pre.6
+    compatible:
+    - 2.7.4
+    - 2.7.5
+    - 2.7.8
+    - 2.7.9
+    - 2.8.0-exp.1
+    - 2.8.0-exp.2
+    - 2.8.0-pre.1
+    - 2.8.0
+    - 2.8.1
+    - 2.8.2
+    - 2.8.3
+    - 2.8.4
+    - 2.9.0-pre.1
+    - 2.9.0-pre.6
+    verified: 2.7.9
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - camera
+  - follow
+  - rig
+  - fps
+  - cinematography
+  - aim
+  - orbit
+  - cutscene
+  - cinematic
+  - collision
+  - freelook
+  - cinemachine
+  - compose
+  - composition
+  - dolly
+  - track
+  - clearshot
+  - noise
+  - framing
+  - handheld
+  - lens
+  - impulse
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+  hasRegistry: 1
+  hideInEditor: 1
+  entitlements:
+    isAllowed: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637703219070000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.cinemachine.git
+    revision: 45030a8e7a24daae3215fc89709d5f771e4194fb
+    path: 
+  unityLifecycle:
+    version: 2.7.4
+    nextVersion: 2.8.0-pre.1
 - packageId: com.unity.collab-proxy@1.7.1
   testable: 0
   isDirectDependency: 1
@@ -365,10 +508,12 @@ m_ResolvedPackages:
     - 1.2.2
     - 1.2.3
     - 1.2.4
+    - 1.2.5
     compatible:
     - 1.2.3
     - 1.2.4
-    verified: 1.2.4
+    - 1.2.5
+    verified: 1.2.5
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -447,15 +592,17 @@ m_ResolvedPackages:
     - 1.1.27
     - 1.1.29
     - 1.1.30
+    - 1.1.31
     - 2.0.1-pre.12
     - 2.0.1-pre.18
     compatible:
     - 1.1.27
     - 1.1.29
     - 1.1.30
+    - 1.1.31
     - 2.0.1-pre.12
     - 2.0.1-pre.18
-    verified: 1.1.30
+    verified: 1.1.31
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -2744,8 +2891,10 @@ m_ResolvedPackages:
     - 1.0.0
     - 1.0.5
     - 1.0.6
+    - 2.0.2
     compatible:
     - 1.0.6
+    - 2.0.2
     verified: 1.0.6
   dependencies: []
   resolvedDependencies: []
@@ -2815,10 +2964,12 @@ m_ResolvedPackages:
     - 2.0.0-preview.2
     - 2.0.0
     - 2.0.1-preview.1
+    - 2.0.2
     compatible:
     - 2.0.0
     - 2.0.1-preview.1
-    verified: 2.0.0
+    - 2.0.2
+    verified: 2.0.2
   dependencies: []
   resolvedDependencies: []
   keywords: []
