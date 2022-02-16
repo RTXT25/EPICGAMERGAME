@@ -19,7 +19,7 @@ public class movement : MonoBehaviour{
     void Start(){
         Cursor.lockState = CursorLockMode.Locked;
     }
-    void Update(){
+  /*  void Update(){
         isGrounded = Physics.CheckSphere(GroundCheck.position, groundDistance, ground);
         if(isGrounded && velocity.y < 0){
             velocity.y = 0f;
@@ -45,4 +45,8 @@ public class movement : MonoBehaviour{
         controller.Move(velocity * Time.deltaTime);
         
     }
+
+}*/
+void Update() {
+    player.transform.forward(1f);
 }
