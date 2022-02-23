@@ -19,7 +19,7 @@ public class movement : MonoBehaviour{
     void Start(){
         Cursor.lockState = CursorLockMode.Locked;
     }
-  /*  void Update(){
+    void Update(){
         isGrounded = Physics.CheckSphere(GroundCheck.position, groundDistance, ground);
         if(isGrounded && velocity.y < 0){
             velocity.y = 0f;
@@ -27,13 +27,14 @@ public class movement : MonoBehaviour{
         float rot = Camera.main.transform.localEulerAngles.y;
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
+        float angle = rot;
+        transform.rotation = Quaternion.Euler(0f, angle, 0f);
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
         if (direction.magnitude >= 0.1f){
 
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
-            float angle = rot;
-            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+
             Vector3 moveDir = Quaternion.Euler(0f, angle, 0f) * Vector3.forward;
             
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
@@ -46,7 +47,4 @@ public class movement : MonoBehaviour{
         
     }
 
-}*/
-void Update() {
-    player.transform.forward(1f);
 }
