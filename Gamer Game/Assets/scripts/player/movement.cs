@@ -27,18 +27,28 @@ public class movement : MonoBehaviour{
         float rot = Camera.main.transform.localEulerAngles.y;
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
-        float angle = rot;
-        transform.rotation = Quaternion.Euler(0f, angle, 0f);
-        Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
+        transform.rotation = Quaternion.Euler(0f, rot, 0f);
+     
+        if (Input.GetAxisRaw("Vertical") == 1){
+            Vector3 moveDir = Quaternion.Euler(0f, rot, 0f) * Vector3.forward;
+             controller.Move(moveDir.normalized * speed * Time.deltaTime);
+        }
 
-        if (direction.magnitude >= 0.1f){
-
-            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
-
-            Vector3 moveDir = Quaternion.Euler(0f, angle, 0f) * Vector3.forward;
-            
+        if (Input.GetAxisRaw("Vertical") == -1){
+            Vector3 moveDir = Quaternion.Euler(0f, rot, 0f) * Vector3.back;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
+
+        if (Input.GetAxisRaw("Horizontal") == -1){
+            Vector3 moveDir = Quaternion.Euler(0f, rot, 0f) * Vector3.left;
+            controller.Move(moveDir * speed * Time.deltaTime);
+        }
+
+        if (Input.GetAxisRaw("Horizontal") == 1){
+            Vector3 moveDir = Quaternion.Euler(0f, rot, 0f) * Vector3.right;
+            controller.Move(moveDir * speed * Time.deltaTime);
+        }
+
         if(Input.GetButtonDown("Jump") && isGrounded){
             velocity.y = Mathf.Sqrt(JumpHeight * -2 * Gravity);
         }
