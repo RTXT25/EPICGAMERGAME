@@ -314,9 +314,9 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/scripts/player/attack spawn.cs"
 "Assets/scripts/player/movement.cs"
 "Assets/scripts/player/test.cs"
+"Assets/scripts/player/testspawn.cs"
 -langversion:8.0
 
 /deterministic
